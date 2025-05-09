@@ -15,29 +15,29 @@ Evaluation Tools: Metrics such as Mean Squared Error (MSE), R-Squared Score (R²
 ### PROCEDURE:
 A systematic approach leveraging diverse prompting techniques is employed to ensure robust design, user-centered workflows, and accurate, actionable weather insights.
 
-1. Introduction
-Objective:
+# 1. Introduction
+# Objective:
 Build a responsive, intelligent system that provides real-time, localized weather information for daily use.
 
-Importance of Scenario-Based Prompting:
+# Importance of Scenario-Based Prompting:
 Using a combination of scenario-based, straightforward, tabular format, and preceding question prompting techniques enhances precision, anticipation of user needs, and robust system resilience.
-2. Project Overview
-Use Case Selection:
+# 2. Project Overview
+# Use Case Selection:
 Local weather investigation for decision-making across sectors such as agriculture, tourism, education, and event planning.
-Scope:
+# Scope:
 Real-time data retrieval.
 Short-term (hourly) and long-term (weekly) forecasting.
 Customizable user notifications.
 Data visualization and user trend reports.
-3. Prompting Techniques for Each Stage of the Design Process
-Stage 1: Requirement Gathering and User Needs Assessment
-User Scenario Prompting:
+# 3. Prompting Techniques for Each Stage of the Design Process
+# Stage 1: Requirement Gathering and User Needs Assessment
+# User Scenario Prompting:
 "Imagine you are a parent planning a weekend outing. What weather details would you check before leaving?"
-Goal:
+# Goal:
 Capture real-world dependencies on weather such as temperature, UV index, wind speed, and rain probability.
-Straightforward Prompting:
+# Straightforward Prompting:
 "List the 3 most important weather details needed daily."
-Goal:
+# Goal:
 Obtain crisp, prioritized information (e.g., temperature, precipitation, humidity).
 Tabular Format Prompting:
 User Type	Weather Data Needed	Purpose
@@ -45,22 +45,22 @@ Farmer	Rain prediction, humidity	Irrigation scheduling
 Student	Temperature, wind speed	Daily commute planning
 Tourist	UV index, rainfall chances	Outdoor activity planning
 
-Goal:
+# Goal:
 Identify specific weather parameters based on user profiles.
-Preceding Question Prompting:
+# Preceding Question Prompting:
 "Before checking the detailed forecast, what general weather conditions do you want to know first?"
-Goal:
+# Goal:
 Define information hierarchy for quick app navigation.
-Stage 2: System Design and Architecture
-Technical Scenarios for Component Design:
+# Stage 2: System Design and Architecture
+# Technical Scenarios for Component Design:
 "Suggest an optimal backend structure that can fetch weather data every 15 minutes without overwhelming the server."
-Goal:
+# Goal:
 Establish a lightweight, scalable architecture using scheduled data pulls and serverless functions.
-Straightforward Prompting:
+# Straightforward Prompting:
 "What are the 5 core modules needed for a weather monitoring system?"
-Goal:
+# Goal:
 Ensure comprehensive module coverage (data retrieval, storage, processing, visualization, notification).
-Tabular Format Prompting:
+# Tabular Format Prompting:
 Module Name	Functionality	Technology Stack
 Data Fetcher	Retrieve live weather API data	Python + REST APIs
 Database Manager	Store historical data	PostgreSQL/SQLite
@@ -68,22 +68,22 @@ Predictor Engine	Forecast using ML models	Scikit-learn / TensorFlow
 UI/UX Interface	Display real-time weather info	React Native
 Alert Manager	Send severe weather notifications	Firebase Cloud Messaging
 
-Goal:
+# Goal:
 Clarify technical blueprint and roles of each component.
 
 
-Preceding Question Prompting:
+# Preceding Question Prompting:
 "Before deciding the database type, what factors (e.g., speed, storage, scalability) should be considered?"
-Goal:
+# Goal:
 Prioritize system attributes based on operational requirements.
-Stage 3: Prototype Development
-Scenario-Based Workflow Prompts:
+# Stage 3: Prototype Development
+# Scenario-Based Workflow Prompts:
 "A user opens the app at 7 AM wanting today's rain prediction. Sketch the minimum steps needed."
-Goal:
+# Goal:
 Map fast, intuitive user pathways.
-Straightforward Prompting:
+# Straightforward Prompting:
 "List steps for viewing the 7-day forecast."
-Goal:
+# Goal:
 Standardize workflow: Home → 7-day forecast → Day Details.
 Tabular Format Prompting:
 Step No.	Action	Expected Outcome
@@ -91,23 +91,23 @@ Step No.	Action	Expected Outcome
 2	Tap '7-Day Forecast' Button	Weekly forecast shown
 3	Select a specific date	Detailed weather for that day
 
-Goal:
+# Goal:
 Visualize user journey stages.
 Preceding Question Prompting:
 "Before presenting the full forecast, should the app show a weather summary for today?"
-Goal:
+# Goal:
 Decide on pre-summary before deep-dive forecasts.
 
 
 
-Stage 4: Testing and Iteration
+# Stage 4: Testing and Iteration
 Stress Testing and Edge Case Prompts:
 "What happens if 5,000 users simultaneously request severe storm alerts?"
-Goal:
+# Goal:
 Test system under extreme demand scenarios.
-Straightforward Prompting:
+# Straightforward Prompting:
 "Name 3 common failure points during bad weather API fetches."
-Goal:
+# Goal:
 Prepare for network downtime, API limit exceedance, and server crashes.
 Tabular Format Prompting:
 Potential Issue	Mitigation Strategy
@@ -115,23 +115,23 @@ API Downtime	Local caching + Retry Mechanism
 Network Failure	Push local last-updated data
 Load Spike	Implement Auto-scaling via AWS/GCP
 
-Goal:
+# Goal:
 Build robust contingency measures.
 
-Preceding Question Prompting:
+# Preceding Question Prompting:
 "Before a user complains about outdated weather data, what fallback mechanisms should be activated?"
-Goal:
+# Goal:
 Improve user trust and system reliability.
 
-Stage 5: Deployment and Continuous Improvement
-Real-World Scenario Prompts:
+# Stage 5: Deployment and Continuous Improvement
+# Real-World Scenario Prompts:
 "A sudden heatwave is expected next week. How should the system update users?"
 
-Goal:
+# Goal:
 Enable timely, clear, and non-intrusive user alerts.
-Straightforward Prompting:
+# Straightforward Prompting:
 "Mention 4 ways the app can keep growing user base post-deployment."
-Goal:
+# Goal:
 Focus on engagement strategies: gamification, rewards, personalized alerts, social sharing.
 Tabular Format Prompting:
 Growth Strategy	Implementation Example
@@ -140,14 +140,14 @@ Social Sharing	"Share Today’s Forecast" option
 Personalized Forecasts	Custom notification settings
 Community Feedback Loop	In-app surveys
 
-Goal:
+# Goal:
 Sustain user interest and growth.
 Preceding Question Prompting:
 "Before launching to new regions, what local weather differences must the app account for?"
-Goal:
+# Goal:
 Prepare for regional variations (e.g., monsoon alerts vs snowstorm warnings).
 
-4. Evaluation of Prompt Effectiveness in Design
+# 4. Evaluation of Prompt Effectiveness in Design
 Accuracy and Specificity:
 Straightforward, scenario-based, and tabular prompts enabled detailed identification of technical and user requirements.
 Adaptability to User Needs:
@@ -155,8 +155,8 @@ Preceding question prompts helped anticipate dynamic user behaviors and environm
 
 Flexibility in Design Adjustments:
 The structured prompting strategies allowed agile modifications in prototype and system architecture.
-5. Conclusion and Recommendations
-Summary:
+# 5. Conclusion and Recommendations
+# Summary:
 Scenario-based, straightforward, tabular, and preceding question prompting approaches collectively strengthened the system design, improving forecast accuracy, user experience, and operational robustness.
 Best Practices for Prompting:
 Combine straightforward prompts for clarity.
